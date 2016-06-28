@@ -1,0 +1,29 @@
+{
+  "name": "testing-example",
+  "version": "1.0.0",
+  "description": "Example repo for node testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewglover/testing-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewglover/testing-example/issues"
+  },
+  "homepage": "https://github.com/matthewglover/testing-example#readme",
+  "devDependencies": {
+    "ghooks": "^1.2.4",
+    "validate-commit-msg": "^2.6.1"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "echo \"Pre commit goes here...\"",
+      "commit-msg": "validate-commit-msg"
+    }
+  }
+}
